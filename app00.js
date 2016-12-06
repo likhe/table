@@ -12,7 +12,7 @@ const ready = function() {
     for (var i = 0; i < people.length; i++) {
       //Créer un élément
       let tr = document.createElement("tr");
-      tr.innerHTML = '<td>${people[i].surname}</td><td>${people[i].firstname}</td>'; //= "<td>people[i].firstname</td>" en gros une autre manière de concaténer
+      tr.innerHTML = `<td>${people[i].surname}</td><td>${people[i].firstname}</td>`; //= "<td>people[i].firstname</td>" en gros une autre manière de concaténer
       tbody.appendChild(tr);
     }
   //End boucle
